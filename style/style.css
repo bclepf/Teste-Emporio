@@ -131,10 +131,6 @@ ul#produtos-menu li:hover{
   border: none;
 }
 
-ul#produtos-menu li:hover span{
-  opacity: 1;
-}
-
 ul#produtos-menu li#chas{
   background: url('../imagens/cha-menu') no-repeat;
   background-position: 50% 50%;

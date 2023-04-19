@@ -117,7 +117,7 @@
   }
 
   ul#produtos-menu li span{
-    opacity: 0;
+    opacity: 1;
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(0, 0, 0, .3);

@@ -5,28 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
+	<link rel="stylesheet" type="text/css" href="./style/carrossel.css">
 	<link rel="shortcut icon" href="./imagens/logo-emporio.png" type="imagem/x-icon">
     <title>Produtos Naturais</title>
 </head>
 <body>
 	<nav>
 	<header class="cabecalho">
-        <img class="cabecalho-logo" src="./imagens/logo-emporio.png"  alt="logo da loja Empório Granel">
-		<div class="search-bar">
+        <a href="index.html"><img class="cabecalho-logo" src="./imagens/logo-emporio.png"  alt="logo da loja Empório Granel">
+		<div class="search-bar"></a>
 			<input type="text" placeholder="Search...">
 			<button type="submit"><i class="fa fa-search"></i></button>
 		</div>		  
-        <a href="" class="cabecalho-menu-item "  > Todos os Produtos</a>
-        <a href="" class="cabecalho-menu-item "  > Alimentos</a>
-        <a href="" class="cabecalho-menu-item "  > Suplementos</a>
-        <a href="" class="cabecalho-menu-item "  > Bem-estar</a>
-		<a href="./form-login/formulario-de-login.html"><img class="cabecalho-icone-user" src="./imagens/icons.png" alt="Imagem de login"></a> 
+        <a href="Todos-os-Produtos.html" class="cabecalho-menu-item "  > Todos os Produtos</a>
+        <a href="Alimentos.html" class="cabecalho-menu-item "  > Alimentos</a>
+        <a href="Suplementos.html" class="cabecalho-menu-item "  > Suplementos</a>
+        <a href="Bem-estar.html" class="cabecalho-menu-item "  > Bem-estar</a>
+		<a href="./form-login/formulario-login.html"><img class="cabecalho-icone-user" src="./imagens/icons.png" alt="Imagem de login"></a> 
 		<img class="carrinho-icone" src="./imagens/carrinho-de-compra.png" alt="Imagem do carrinho de compra">
 		
 	</header>
 	</nav>
 	<main class="main" >
-	
+		<div class="slider">
+			<div class="slides">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+
+				<div class="slide first">
+					<img src="imagens/AVEIA (2).png" alt=""/>
+				</div>
+				<div class="slide second">
+					<img src="imagens/CHÁ CAVALINHA.png" alt=""/>
+				</div>
+				<div class="slide third">
+					<img src="imagens/GRANOLA TRADICIONAL.png" alt=""/>
+				</div>
+				<div class="slide fourth">
+					<img src="imagens/MACA PERUANA.png" alt=""/>
+				</div>
+				<div class="navigation-auto">
+					<div class="auto-btn-1"></div>
+					<div class="auto-btn-2"></div>
+					<div class="auto-btn-3"></div>
+					<div class="auto-btn-4"></div>
+				</div>
+			</div>
+			<div class="manual-navigation">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+			</div>
+		</div>
+
 		<div id="produtos-naturais">
 			<h2>Nossos produtos</h2>
 			<ul id="produtos-menu">
@@ -58,5 +92,6 @@
 	
 	</footer>
 	<script src="./script/script.js"></script>
+	<script src="script/carrossel.js"></script>
 </body>
 </html>

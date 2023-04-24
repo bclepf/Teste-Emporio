@@ -81,17 +81,16 @@
   
   /* MAIN */
   .main {
-    max-width: 960px;
+    
     margin: 0 auto;
     padding: 20px;
   }
 
-  div#produtos-naturais{
-    text-align: center;
-  }
-
-  div#produtos-naturais h2{
-  text-align: center;
+  div#produtos-naturais :not(span){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   ul#produtos-menu{
@@ -107,29 +106,27 @@
     float:left;
     width: 180px;
     height: 180px;
-    margin: none;
-    border: 2px solid white;
+    margin: 10px;
+    border: 5px solid white;
     background-color: white;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
     transition: all .4s ease-in;
-    display: block;    
-    
-  }
+    display: flex;    
+    }
 
   ul#produtos-menu li span{
     opacity: 1;
     color: white;
     text-shadow: 1px 1px 1px black;
     background-color: rgba(0, 0, 0, .3);
-    font-size: 9pt;
-    line-height: 315px;
+    font-size: 13pt;
     padding: 5px;
-}
+  }
 
 ul#produtos-menu li:hover{
   transform: scale(1.5);
   border: none;
-}
+ }
 
 ul#produtos-menu li#chas{
   background: url('../imagens/cha-menu') no-repeat;

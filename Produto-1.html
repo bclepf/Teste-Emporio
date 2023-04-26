@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <link rel="stylesheet" type="text/css" href="./style/produtos.css">
+    <link rel="stylesheet" type="text/css" href="./style/produto-1.css">
+	<link rel="shortcut icon" href="./imagens/logo-emporio.png" type="imagem/x-icon">
+    <title>Produtos Naturais</title>
+</head>
+<body>
+	<nav>
+	<header class="cabecalho">
+        <a href="index.html"><img class="cabecalho-logo" src="./imagens/logo-emporio.png"  alt="logo da loja Empório Granel"></a>
+		<div class="search-bar">
+			<input type="text" placeholder="Search...">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>		  
+        <a href="Todos-os-Produtos.html" class="cabecalho-menu-item "  > Todos os Produtos</a>
+        <a href="Alimentos.html" class="cabecalho-menu-item "  > Alimentos</a>
+        <a href="Suplementos.html" class="cabecalho-menu-item "  > Suplementos</a>
+        <a href="Bem-estar.html" class="cabecalho-menu-item "  > Bem-estar</a>
+		<a href="./form-login/formulario-login.html"><img class="cabecalho-icone-user" src="./imagens/icons.png" alt="Imagem de login"></a> 
+		<img class="carrinho-icone" src="./imagens/carrinho-de-compra.png" alt="Imagem do carrinho de compra">
+    </nav>
+</header>
+<main>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="produto" src="./imagens/AVEIA (2).png" alt="Imagem do Produto">
+            </div>
+            <div class="col-md-6">
+                <h1>Farelo de aveia Vitalin 200g</h1>
+                <p class="preco">R$ 14,90</p>
+                <form>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                <button type="submit">Comprar</button>
+                </form>
+                <div class="frete">
+                <label for="cep">Digite o CEP:</label>
+                <input type="text" id="cep" name="cep">
+                <button type="button">Calcular Frete</button>
+                </div>
+                <div class="avaliacao">
+                <h2>Avaliações dos clientes</h2>
+                <p class="nota">Nota: 4.5</p>
+                <p class="qtd-avaliacoes">5 avaliações</p>
+                <button type="button">Avaliar Produto</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <h2>Descrição do Produto</h2>
+                <p>O Farelo de Aveia Vitalin é produzido com matérias-primas selecionadas e é uma excelente fonte de fibras solúveis e insolúveis.</p>
+                <p>Além de ser um alimento nutritivo e saudável, o farelo de aveia pode ajudar a reduzir o colesterol ruim e melhorar o funcionamento do intestino.</p>
+                <h3>Benefícios do Farelo de Aveia:</h3>
+                <ul>
+                <li>Auxilia na redução do colesterol ruim;</li>
+                <li>Fonte de fibras solúveis e insolúveis;</li>
+                <li>Ajuda no funcionamento do intestino;</li>
+                <li>Contribui para a sensação de saciedade;</li>
+                <li>Auxilia no controle da glicemia.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+</main>
+<footer class="footer">
+		
+    <h3 class="h3-footer">Sobre Nós</h3>
+
+    <section class="section-footer" id="sobre">
+        <p>Nós somos uma loja de produtos naturais comprometida em oferecer aos nossos clientes produtos saudáveis e de qualidade.</p>
+        <p>Oferecemos uma variedade de produtos, incluindo alimentos orgânicos, suplementos alimentares, chás, óleos essenciais, entre outros.</p>
+    </section>
+
+    <ul class="footer-ul">
+    <p>Endereço: Rua Álvares da Silva, 06 Centro - Arcos Minas Gerais <br/> CEP 35588-000/p>
+    <p>Telefone: (37) 3351-2646</p>
+    <p>Email: </p>
+    <a href="https://www.instagram.com/emporioagranel.arcos/">Nos siga no Instagram</a>
+    </ul>
+
+</footer>
+</body>
+</html>

@@ -3,7 +3,7 @@
     background-color: #FEFAE0;
   }
 *{
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -202,21 +202,21 @@ ul#produtos-menu li#suplementos:hover{
   /* Estilo do rodapé */
   .footer {
     background-color: #f4f4f4;
-    padding: 50px 20px;
+    padding: 10px 10px;
     text-align: center;
     color: #333;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     border-top: 1px solid #ccc;
   }
   
   .h3-footer {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 15px;
+    margin-bottom: 15px;
   }
   
   .section-footer {
-    margin-bottom: 30px;
+    margin-bottom: px;
   }
   
   .footer-ul {
@@ -226,7 +226,7 @@ ul#produtos-menu li#suplementos:hover{
   }
   
   .footer-ul p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
   .footer a{

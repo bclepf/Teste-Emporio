@@ -1,9 +1,9 @@
 /* Estilo global */
-  body{
-    background-color: #FEFAE0;
-  }
+body{
+  background-color: #FEFAE0;
+}
 *{
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -19,176 +19,173 @@
     padding: 16px;
 }
 
-  .cabecalho a{
-    text-decoration: none;
-    color: white;
-  }
+.cabecalho a{
+  text-decoration: none;
+  color: white;
+}
 
- .cabecalho-logo {
-   height: 100px;
+.cabecalho-logo {
+ height: 100px;
+}
+
+
+/* Barra de pesquisa*/
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  padding: 8px;
+  border-radius: 20px;
+  
+}
+
+.search-bar input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  margin: 0;
+  background-color: transparent;
+}
+
+.search-bar button[type="submit"] {
+  border: none;
+  background-color: transparent;
+  margin-left: 8px;
+  cursor: pointer;
+
+}
+
+.fa-search {
+  font-size: 16px;
+  color: #888;
+}
+
+ /*Ancoras do menu */
+ .cabecalho-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+ 
  }
 
- 
-  /* Barra de pesquisa*/
-  .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #f3f3f3;
-    padding: 8px;
-    border-radius: 20px;
-    
-  }
+ /*Icone de User*/
+ .cabecalho-icone-user {
+  height: 50px;
+}
+
+.carrinho-icone {
+  height: 50px;
+}
+
+
+/* MAIN */
+.main {
   
-  .search-bar input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    border: none;
-    margin: 0;
-    background-color: transparent;
-  }
-  
-  .search-bar button[type="submit"] {
-    border: none;
-    background-color: transparent;
-    margin-left: 8px;
-    cursor: pointer;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  }
-  
-  .fa-search {
-    font-size: 16px;
-    color: #888;
-  }
-  
-   /*Ancoras do menu */
-   .cabecalho-menu-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 10px;
-   
-   }
-  
-   /*Icone de User*/
-   .cabecalho-icone-user {
-    height: 50px;
+div#produtos-naturais :not(span){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul#produtos-menu{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  overflow: hidden;
+  list-style: none;
+  left: 200px;
   }
 
-  .carrinho-icone {
-    height: 50px;
+ul#produtos-menu li{
+  float:left;
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  border: 5px solid white;
+  background-color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+  transition: all .4s ease-in;
+  display: flex;    
   }
 
-  
-  /* MAIN */
-  .main {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  div#produtos-naturais{
-    text-align: center;
-  }
-
-  div#produtos-naturais h2{
-  text-align: center;
-  }
-
-  ul#produtos-menu{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-    overflow: hidden;
-    list-style: none;
-    left: 200px;
-    }
-
-  ul#produtos-menu li{
-    float:left;
-    width: 180px;
-    height: 180px;
-    margin: none;
-    border: 2px solid white;
-    background-color: white;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
-    transition: all .4s ease-in;
-    display: block;    
-    
-  }
-
-  ul#produtos-menu li span{
-    opacity: 1;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    background-color: rgba(0, 0, 0, .3);
-    font-size: 9pt;
-    line-height: 315px;
-    padding: 5px;
+ul#produtos-menu li span{
+  opacity: 1;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  background-color: rgba(0, 0, 0, .3);
+  font-size: 13pt;
+  padding: 5px;
 }
 
 ul#produtos-menu li:hover{
-  transform: scale(1.5);
-  border: none;
+transform: scale(1.5);
+border: none;
 }
 
 ul#produtos-menu li#chas{
-  background: url('../imagens/cha-menu') no-repeat;
-  background-position: 50% 50%;
-  background-size: 400px 400px;
-  background-color: white;
+background: url('../imagens/cha-menu') no-repeat;
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: white;
 }
 
 ul#produtos-menu li#chas:hover{
-  background-position: 0px 0px;
-  background-size: 200px 200px;
+background-position: 0px 0px;
+background-size: 200px 200px;
 }
 
 ul#produtos-menu li#farinhas{
-  background: url('../imagens/farinha-menu') no-repeat;
-  background-position: 50% 50%;
-  background-size: 400px 400px;
-  background-color: white;
+background: url('../imagens/farinha-menu') no-repeat;
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: white;
 }
 
 ul#produtos-menu li#farinhas:hover{
-  background-position: 0px 0px;
-  background-size: 200px 200px;
+background-position: 0px 0px;
+background-size: 200px 200px;
 }
 
 ul#produtos-menu li#oleoginosas{
-  background: url('../imagens/oleoginosas-menu') no-repeat;
-  background-position: 50% 50%;
-  background-size: 400px 400px;
-  background-color: white;
+background: url('../imagens/oleoginosas-menu') no-repeat;
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: white;
 }
 
 ul#produtos-menu li#oleoginosas:hover{
-  background-position: 0px 0px;
-  background-size: 200px 200px;
+background-position: 0px 0px;
+background-size: 200px 200px;
 }
 
 ul#produtos-menu li#temperos{
-  background: url('../imagens/temperos-menu') no-repeat;
-  background-position: 50% 50%;
-  background-size: 400px 400px;
-  background-color: white;
+background: url('../imagens/temperos-menu') no-repeat;
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: white;
 }
 
 ul#produtos-menu li#temperos:hover{
-  background-position: 0px 0px;
-  background-size: 200px 200px;
+background-position: 0px 0px;
+background-size: 200px 200px;
 }
 
 ul#produtos-menu li#suplementos{
-  background: url('../imagens/suplementos-menu') no-repeat;
-  background-position: 50% 50%;
-  background-size: 400px 400px;
-  background-color: white;
+background: url('../imagens/suplementos-menu') no-repeat;
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: white;
 }
 
 ul#produtos-menu li#suplementos:hover{
-  background-position: 0px 0px;
-  background-size: 200px 200px;
+background-position: 0px 0px;
+background-size: 200px 200px;
 }
 
   .lista-de-produtos {
@@ -202,21 +199,21 @@ ul#produtos-menu li#suplementos:hover{
   /* Estilo do rodapé */
   .footer {
     background-color: #f4f4f4;
-    padding: 10px 10px;
+    padding: 50px 20px;
     text-align: center;
     color: #333;
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     border-top: 1px solid #ccc;
   }
   
   .h3-footer {
-    font-size: 15px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 30px;
   }
   
   .section-footer {
-    margin-bottom: px;
+    margin-bottom: 30px;
   }
   
   .footer-ul {
@@ -226,7 +223,7 @@ ul#produtos-menu li#suplementos:hover{
   }
   
   .footer-ul p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   
   .footer a{
